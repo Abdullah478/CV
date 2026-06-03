@@ -154,6 +154,26 @@ main{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:5rem 2re
 .pj-tags{display:flex;flex-wrap:wrap;gap:.32rem;margin-top:auto;}
 .pt{padding:.16rem .5rem;border-radius:6px;font-size:.68rem;font-weight:700;font-family:var(--mono);background:var(--c-surface2);color:var(--c-text2);border:1px solid var(--c-border);}
 .pj-card.emp .pj-name,.pj-card.emp .pj-ico{opacity:.5;}
+.pj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background: var(--grad);
+  padding: .45rem 1rem;
+  border-radius: 8px;
+  transition: all .25s;
+  margin-top: .5rem;
+  opacity: .9;
+}
+.pj-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--glow);
+}
 
 /* EDUCATION */
 .edu{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r);padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start;transition:all .3s;}
@@ -250,12 +270,12 @@ footer{position:relative;z-index:1;text-align:center;padding:3rem 2rem;border-to
     <p class="h-sub">طالب علوم حاسوب · مطوّر ناشئ · جامعة تكريت</p>
     <div class="h-status"><div class="sdot"></div>تحت التطوير والتعلم المستمر</div>
     <p class="h-about">
-      طالب في <strong>المرحلة الثانية</strong> من كلية علوم الحاسوب بجامعة تكريت.
+      طالب في <strong>المرحلة الثالثة</strong> من كلية علوم الحاسوب بجامعة تكريت.
       أبني أساسي في عالم البرمجة بشغف وصبر — أؤمن أن كل سطر كود هو استثمار في المستقبل.
       أدرس لغات متعددة وأسعى لتطوير مهاراتي يومًا بعد يوم. رحلتي بدأت للتو! 🚀
     </p>
     <div class="h-stats">
-      <div><div class="stat-n">2</div><div class="stat-l">سنة دراسية</div></div>
+      <div><div class="stat-n">3</div><div class="stat-l">سنة دراسية</div></div>
       <div><div class="stat-n">5+</div><div class="stat-l">لغات برمجة</div></div>
       <div><div class="stat-n">∞</div><div class="stat-l">شغف بالتعلم</div></div>
     </div>
@@ -288,6 +308,10 @@ footer{position:relative;z-index:1;text-align:center;padding:3rem 2rem;border-to
           <span>tellnoym</span>
           
       </a>
+      <a class="sbtn" href="mailto:abdullah.w.kamel@st.tu.edu.iq" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>Email</span>
+      </a>
       </a>
     </div>
   </div>
@@ -300,7 +324,7 @@ footer{position:relative;z-index:1;text-align:center;padding:3rem 2rem;border-to
         <div class="av-tag">ABDULLAH WK</div>
         <div class="av-code">abdullah.w.kamel@st.tu.edu.iq</div>
       </div>
-      <div class="fbadge"><div class="fdot"></div><span>CS Student 🎓</span></div>
+      
       
     </div>
   </div>
@@ -318,16 +342,16 @@ footer{position:relative;z-index:1;text-align:center;padding:3rem 2rem;border-to
       </div>
       <div class="sk-items">
         <div>
-          <div class="si-top"><span class="si-name">C++</span><span class="si-lv lv-b">متوسط</span></div>
-          <div class="sbar"><div class="sfill" data-w="62"></div></div>
+          <div class="si-top"><span class="si-name">C++</span><span class="si-lv lv-c"> جيد جدا ✓ </span></div>
+          <div class="sbar"><div class="sfill" data-w="75"></div></div>
         </div>
         <div>
-          <div class="si-top"><span class="si-name">Python</span><span class="si-lv lv-a">تحت التعلم 🔄</span></div>
-          <div class="sbar"><div class="sfill sf4" data-w="20"></div></div>
+          <div class="si-top"><span class="si-name">Python</span><span class="si-lv lv-b"> متوسط </span></div>
+          <div class="sbar"><div class="sfill sf4" data-w="50"></div></div>
         </div>
         <div>
-          <div class="si-top"><span class="si-name">JavaScript</span><span class="si-lv lv-a">تحت التعلم 🔄</span></div>
-          <div class="sbar"><div class="sfill sf4" data-w="15"></div></div>
+          <div class="si-top"><span class="si-name">JavaScript</span><span class="si-lv lv-c"> جيد ✓</span></div>
+          <div class="sbar"><div class="sfill sf4" data-w="60"></div></div>
         </div>
       </div>
     </div>
@@ -401,6 +425,10 @@ footer{position:relative;z-index:1;text-align:center;padding:3rem 2rem;border-to
       <div class="pj-name">موقع المدرسة</div>
       <div class="pj-desc">أول مشروع حقيقي — موقع ويب للمدرسة التي درست فيها. خطوتي الأولى من التمارين إلى شيء حقيقي على الإنترنت.</div>
       <div class="pj-tags"><span class="pt">HTML</span><span class="pt">CSS</span></div>
+      <a href="https://abdullah478.github.io/AbuObaida" target="_blank" class="pj-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2v-7h-2v7z"/></svg>
+        عرض المشروع
+      </a>
     </div>
 
     <div class="pj-card emp">
@@ -457,10 +485,10 @@ footer{position:relative;z-index:1;text-align:center;padding:3rem 2rem;border-to
         <div class="edu-sch">جامعة تكريت</div>
         <div class="edu-maj">كلية علوم الحاسوب والرياضيات · تخصص علوم الحاسوب</div>
         <div class="edu-dt">
-          حاليًا في <strong>المرحلة الثانية</strong>، أدرس مواد تشمل: البرمجة بـ C++، قواعد البيانات، الرياضيات المنفصلة، تحليل وتصميم الخوارزميات، ومبادئ الشبكات والأنظمة.
+          حاليًا في <strong>المرحلة الثالثة</strong>، أدرس مواد تشمل: البرمجة بـ C++، قواعد البيانات، الرياضيات المنفصلة، تحليل وتصميم الخوارزميات، ومبادئ الشبكات والأنظمة.
           أسعى لتطبيق كل ما أتعلمه في مشاريع عملية حقيقية بجانب المنهج الأكاديمي.
         </div>
-        <div class="edu-bx">🟢 طالب نشط · المرحلة الثانية</div>
+        <div class="edu-bx">🟢طالب نشط · المرحلة الثالثة</div>
       </div>
     </div>
   </div>
